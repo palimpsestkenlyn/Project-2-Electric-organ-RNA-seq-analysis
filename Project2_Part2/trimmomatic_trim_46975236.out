@@ -1,0 +1,34 @@
+ WARN cache for Repodata at /home/hodapp/.cache/rattler/cache/repodata is on a network/parallel filesystem (NFS/SMB/FUSE/BeeGFS/Lustre/GPFS/CephFS), redirected to /tmp/pixi-cache-hodapp/repodata for this run. Set [cache.repodata] in config.toml or PIXI_CACHE_DIR to override, or [cache.netfs-redirect] = "never" to keep the original path.
+TrimmomaticPE: Started with arguments:
+ cutadapt_outputs/SRR25630303_1_trimmed.fastq.gz cutadapt_outputs/SRR25630303_2_trimmed.fastq.gz trimmomatic_outputs/SRR25630303_1_paired.fastq.gz trimmomatic_outputs/SRR25630303_1_unpaired.fastq.gz trimmomatic_outputs/SRR25630303_2_paired.fastq.gz trimmomatic_outputs/SRR25630303_2_unpaired.fastq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
+Quality encoding detected as phred33
+Input Read Pairs: 41934422 Both Surviving: 41636330 (99.29%) Forward Only Surviving: 204515 (0.49%) Reverse Only Surviving: 79778 (0.19%) Dropped: 13799 (0.03%)
+TrimmomaticPE: Completed successfully
+	Command being timed: "pixi run trimmomatic PE cutadapt_outputs/SRR25630303_1_trimmed.fastq.gz cutadapt_outputs/SRR25630303_2_trimmed.fastq.gz trimmomatic_outputs/SRR25630303_1_paired.fastq.gz trimmomatic_outputs/SRR25630303_1_unpaired.fastq.gz trimmomatic_outputs/SRR25630303_2_paired.fastq.gz trimmomatic_outputs/SRR25630303_2_unpaired.fastq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35"
+	User time (seconds): 2701.41
+	System time (seconds): 109.82
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 47:15.97
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1064592
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 14272402
+	Voluntary context switches: 22941
+	Involuntary context switches: 23218
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8584
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+ WARN cache for Repodata at /home/hodapp/.cache/rattler/cache/repodata is on a network/parallel filesystem (NFS/SMB/FUSE/BeeGFS/Lustre/GPFS/CephFS), redirected to /tmp/pixi-cache-hodapp/repodata for this run. Set [cache.repodata] in config.toml or PIXI_CACHE_DIR to override, or [cache.netfs-redirect] = "never" to keep the original path.
+TrimmomaticPE: Started with arguments:
+ cutadapt_outputs/SRR25630398_1_trimmed.fastq.gz cutadapt_outputs/SRR25630398_2_trimmed.fastq.gz trimmomatic_outputs/SRR25630398_1_paired.fastq.gz trimmomatic_outputs/SRR25630398_1_unpaired.fastq.gz trimmomatic_outputs/SRR25630398_2_paired.fastq.gz trimmomatic_outputs/SRR25630398_2_unpaired.fastq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
+Quality encoding detected as phred33
+slurmstepd: error: *** JOB 46975236 ON n0349 CANCELLED AT 2026-08-31T23:00:26 DUE TO TIME LIMIT ***
