@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH --account=bgmp
+#SBATCH --partition=bgmp
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=16G
+#SBATCH --job-name=htseq_SRR25630303_forward
+#SBATCH --output=htseq_SRR25630303_forward_%j.out
+#SBATCH --time=2:00:00
+
+cd /projects/bgmp/hodapp/bioinfo/Bi623/PR2/Project2_QAA/6_C_compressirostris_sample.alignments/3_Star_alignments/SRR25630303
+
+GFF=/projects/bgmp/hodapp/bioinfo/Bi623/PR2/Project2_QAA/6_C_compressirostris_sample.alignments/1_Input_data/campylomormyrus.gff
+SAM=SRR25630303_Aligned.out.sam
+OUTDIR=/projects/bgmp/hodapp/bioinfo/Bi623/PR2/Project2_QAA/6_C_compressirostris_sample.alignments/4_htseq_counts
+
+/usr/bin/time -v pixi run htseq-count \
+    --stranded=yes \
+    -i Parent \
+    $SAM \
+    $GFF \
+    > $OUTDIR/SRR25630303_htseqcounts_forwardstranded.txt
